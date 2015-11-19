@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Graphics module containing window frameworks and rendering mechanics">
+    <Position X="0.5" Y="0.5" Height="0.49" Width="3.335" />
+  </Comment>
+  <Class Name="LogCirDes.Renderable">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABIAAAAAAAAAAAAAAQAAAABIAAAAAAAA=</HashCode>
+      <FileName>Graphics\Renderable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Dimension" />
+      <Property Name="Coordinate" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LogCirDes.Dimension">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Dimension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCirDes.Coordinate">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Coordinate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCirDes.ContentForm">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graphics\ContentForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCirDes.Component">
+    <Position X="2.5" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="LogCirDes.Renderable" FixedToPoint="true">
+      <Path>
+        <Point X="1.25" Y="5.247" />
+        <Point X="1.25" Y="6" />
+        <Point X="2.5" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graphics\Component.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCirDes.ANDRenderable">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <InheritanceLine Type="LogCirDes.Component" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="2.875" Y="6.497" />
+        <Point X="2.875" Y="6.622" />
+        <Point X="2.885" Y="6.622" />
+        <Point X="2.885" Y="6.875" />
+        <Point X="1.25" Y="6.875" />
+        <Point X="1.25" Y="7.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graphics\ANDRenderable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCirDes.ORRenderable">
+    <Position X="2.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graphics\ORRenderable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCirDes.NANDRenderable">
+    <Position X="4.5" Y="7.25" Width="1.5" />
+    <InheritanceLine Type="LogCirDes.Component" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="3.688" Y="6.497" />
+        <Point X="3.688" Y="6.622" />
+        <Point X="3.677" Y="6.622" />
+        <Point X="3.677" Y="6.875" />
+        <Point X="5.25" Y="6.875" />
+        <Point X="5.25" Y="7.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graphics\NANDRenderable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCirDes.Canvas">
+    <Position X="6.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Graphics\Canvas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

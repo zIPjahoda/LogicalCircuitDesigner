@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LogCirDes.Logics.LogicInput" Collapsed="true">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Parent" Type="LogCirDes.LogicComponent" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="1.75" Y="1.062" />
+        <Point X="1.75" Y="2.154" />
+        <Point X="6.75" Y="2.154" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logics\LogicInput.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Parent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LogCirDes.LogicComponent">
+    <Position X="6.75" Y="0.5" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEIAAAAEAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Logics\LogicComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCirDes.Wire">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logics\Wire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCirDes.LogicOutput">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logics\LogicOutput.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Parent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LogCirDes.ANDComponent">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <InheritanceLine Type="LogCirDes.LogicComponent" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="2.507" />
+        <Point X="8.5" Y="3.5" />
+        <Point X="8.75" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logics\ANDComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCirDes.ORComponent">
+    <Position X="8.75" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="LogCirDes.LogicComponent" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="2.507" />
+        <Point X="8.5" Y="4.75" />
+        <Point X="8.75" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logics\ORComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCirDes.NOTComponent">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="LogCirDes.LogicComponent" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="2.507" />
+        <Point X="8.5" Y="6" />
+        <Point X="8.75" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logics\NOTComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LogCirDes.ButtonComponent">
+    <Position X="8.75" Y="6.75" Width="1.5" />
+    <InheritanceLine Type="LogCirDes.LogicComponent" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="2.507" />
+        <Point X="8.5" Y="7.25" />
+        <Point X="8.75" Y="7.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ButtonComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
