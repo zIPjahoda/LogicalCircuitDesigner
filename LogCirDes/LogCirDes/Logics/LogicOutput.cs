@@ -7,16 +7,18 @@ namespace LogCirDes
 {
     public class LogicOutput
     {
+        public event EventHandler ValueChanged;
+
         public LogicComponent Parent
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+            get;
+            set;
+        }
 
-            set
-            {
-            }
+        public Wire Wire
+        {
+            get;
+            set;
         }
     }
 }

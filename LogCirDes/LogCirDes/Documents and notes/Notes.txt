@@ -1,0 +1,16 @@
+﻿Basic goals:
+-maintaining a scalable architecture
+-version control
+-a dang back button
+-zooming
+
+Addidtional goals:
+-scritpting support (lua or python)
+
+
+Modules:
+-logics
+-graphics (and UI)
+-files
+-VersionControl
+

@@ -46,14 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ANDGate.cs" />
     <Compile Include="ButtonComponent.cs" />
+    <Compile Include="ComponentBundle.cs" />
+    <Compile Include="Rendering\Frame.cs" />
     <Compile Include="Logics\ANDComponent.cs" />
-    <Compile Include="Graphics\Canvas.cs">
+    <Compile Include="Rendering\Canvas.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Graphics\ANDRenderable.cs" />
-    <Compile Include="Graphics\Component.cs" />
-    <Compile Include="Graphics\ContentForm.cs">
+    <Compile Include="Rendering\ANDRenderable.cs" />
+    <Compile Include="Rendering\Component.cs" />
+    <Compile Include="Rendering\ContentForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Coordinate.cs" />
@@ -67,14 +70,20 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Graphics\NANDRenderable.cs" />
-    <Compile Include="Graphics\ORRenderable.cs" />
+    <Compile Include="Rendering\NANDRenderable.cs" />
+    <Compile Include="Rendering\ORRenderable.cs" />
     <Compile Include="Logics\NOTComponent.cs" />
     <Compile Include="Logics\ORComponent.cs" />
+    <Compile Include="ORGate.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Graphics\Renderable.cs" />
+    <Compile Include="Rendering\Renderable.cs" />
     <Compile Include="Logics\Wire.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -84,7 +93,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Graphics\GraphicsModule.cd" />
+    <None Include="Core.cd" />
+    <None Include="Rendering\GraphicsModule.cd" />
+    <None Include="Logics\Flowchart.dgml" />
     <None Include="Logics\LogicsDiagram.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,6 +112,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="File\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Documents and notes\TODO.txt" />
+    <Content Include="Documents and notes\Notes.txt" />
+    <Content Include="Resources\Images\and-gate.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

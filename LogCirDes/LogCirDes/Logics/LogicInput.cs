@@ -8,7 +8,21 @@ namespace LogCirDes.Logics
 {
     public class LogicInput
     {
+        public event EventHandler ValueChanged;
+
         public LogicComponent Parent
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+
+            set
+            {
+            }
+        }
+
+        public Wire Wire
         {
             get
             {

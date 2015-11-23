@@ -7,5 +7,8 @@ namespace LogCirDes
 {
     public class Component : Renderable
     {
+        public Component(string texturePath) : base(texturePath)
+        {
+        }
     }
 }

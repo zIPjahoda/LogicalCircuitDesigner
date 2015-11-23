@@ -7,19 +7,9 @@ namespace LogCirDes
 {
     public class Wire
     {
-        public int Outputs
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public event EventHandler ValueChanged;
 
-            set
-            {
-            }
-        }
-
-        public Log Input
+        public bool Value
         {
             get
             {

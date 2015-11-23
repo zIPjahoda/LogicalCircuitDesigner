@@ -7,5 +7,14 @@ namespace LogCirDes
 {
     public class ButtonComponent : LogicComponent
     {
+        public ButtonComponent() : base()
+        {
+            MaxInputs = 0;
+        }
+
+        protected override bool CalculateValue()
+        {
+            return false;
+        }
     }
 }

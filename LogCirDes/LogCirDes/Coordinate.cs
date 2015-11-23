@@ -7,36 +7,33 @@ namespace LogCirDes
 {
     public class Coordinate
     {
-        public float X
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public float X { get; set; }
 
-            set
-            {
-            }
-        }
-
-        public float Y
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
+        public float Y { get; set; }
 
         /// <summary>
         /// Returns the distance between this coordinate and the one given in parameters.
         /// </summary>
-        public double GetDistance(string other)
+        public double GetDistance(Coordinate other)
         {
-            throw new System.NotImplementedException();
+            float deltaX = X - other.X;
+            float deltaY = Y - other.Y;
+            return Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
+        }
+
+        public Coordinate(float x, float y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        public Coordinate() : this(0, 0)
+        {
+        }
+
+        public override string ToString()
+        {
+            return "X: " + X + " Y: " + Y;
         }
     }
 }

@@ -5,7 +5,10 @@ using System.Text;
 
 namespace LogCirDes
 {
-    public class ORRenderable : Component
+    public class NANDRenderable : Component
     {
+        public NANDRenderable() : base(null)
+        {
+        }
     }
 }

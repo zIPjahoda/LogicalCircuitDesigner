@@ -10,45 +10,32 @@ namespace LogCirDes
         /// <summary>
         /// The width of the dimension
         /// </summary>
-        public int Width
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-
-            set
-            {
-            }
-        }
+        public int Width { get; set; }
 
         /// <summary>
         /// The height of the dimension
         /// </summary>
-        public int Height
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        public int Height { get; set; }
 
-            set
-            {
-            }
+        /// <summary>
+        /// Area covered by this dimension.
+        /// </summary>
+        public int Area => Width*Height;
+
+        public Dimension(int width, int height)
+        {
+            Width = width;
+            Height = height;
         }
 
-        public int Area
+        public Dimension() : this(0, 0)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
 
-            set
-            {
-            }
         }
 
-     
+        public string ToString()
+        {
+            return "Width: " + Width + " Height: " + Height;
+        }
     }
 }
